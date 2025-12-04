@@ -1,0 +1,47 @@
+:root{
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --accent:#2b7be4;
+  --muted:#6b7280;
+  --shadow: 0 10px 30px rgba(20,20,40,0.06);
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;font-family:var(--font-sans);}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:#0b1220;
+  padding:18px;
+}
+
+#app{max-width:1200px;margin:0 auto;display:grid;gap:12px}
+header h1{margin:0;font-size:28px;font-weight:700}
+.subtitle{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+#chart-section{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:var(--shadow);
+}
+
+#area-chart{width:100%;height:520px;min-height:420px}
+#chart-note{margin-top:10px;color:var(--muted);font-size:13px}
+
+/* Tooltip styling */
+.chart-tooltip {
+  box-shadow: 0 10px 28px rgba(10,20,50,0.18);
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 9999;
+  font-family: var(--font-sans);
+  background: rgba(4, 17, 34, 0.88);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+
